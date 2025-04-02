@@ -1,0 +1,22 @@
+# Roblox Mod Menu Keyboard Shortcuts
+
+## Movement Controls
+- **F** - Toggle flight mode on/off
+- **Up Arrow** - Fly up (when flight mode is enabled)
+- **Down Arrow** - Fly down (when flight mode is enabled)
+
+## Combat Controls
+- **T** - Activate teleport to current target
+- **L** - Lock/unlock current target for aimbot
+
+## Menu Controls
+- **INSERT** - Toggle menu visibility
+
+## Additional Features
+- Wall Hack: Use the slider to adjust wall transparency (10% to 90%)
+- ESP: Customize color and information display for player boxes
+
+## Notes
+- All keyboard shortcuts only work when the associated mod feature is toggled on
+- Target locking requires aimbot to be enabled first
+- Teleportation works with either locked targets or the closest enemy

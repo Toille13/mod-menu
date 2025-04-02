@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Mod Menu Concept Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <div id="disclaimer-overlay">
+        <div class="disclaimer-content">
+            <h2>Educational Purpose Only</h2>
+            <p>This is a <strong>conceptual demonstration</strong> of how game modification menus work. This tool:</p>
+            <ul>
+                <li>Does NOT actually modify any games</li>
+                <li>Cannot be used to cheat in Roblox</li>
+                <li>Is for educational purposes only</li>
+            </ul>
+            <p>Using actual cheats in online games:</p>
+            <ul>
+                <li>Violates Terms of Service</li>
+                <li>Can result in permanent account bans</li>
+                <li>Ruins the gaming experience for others</li>
+                <li>May be illegal in some jurisdictions</li>
+            </ul>
+            <button id="acknowledge-btn">I Understand (Demo Only)</button>
+        </div>
+    </div>
+
+    <div class="mod-menu" id="mod-menu">
+        <div class="menu-header">
+            <h1>Roblox Mod Menu Concept</h1>
+            <div class="toggle-button" id="menu-toggle">
+                <i data-feather="chevron-left"></i>
+            </div>
+        </div>
+        
+        <div class="info-banner">
+            <i data-feather="info"></i>
+            <span>Educational Demonstration Only - Not Functional</span>
+        </div>
+
+        <div class="menu-sections">
+            <div class="menu-section">
+                <h2>Movement Mods</h2>
+                <div class="mod-option">
+                    <label for="jump-toggle">Enhanced Jump</label>
+                    <label class="switch">
+                        <input type="checkbox" id="jump-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="mod-slider" id="jump-slider-container">
+                    <span>Jump Height:</span>
+                    <input type="range" min="1" max="10" value="3" id="jump-height-slider">
+                    <span id="jump-height-value">3x</span>
+                </div>
+                
+                <div class="mod-option">
+                    <label for="fly-toggle">Fly Mode</label>
+                    <label class="switch">
+                        <input type="checkbox" id="fly-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="mod-slider" id="fly-slider-container">
+                    <span>Fly Speed:</span>
+                    <input type="range" min="1" max="10" value="5" id="fly-speed-slider">
+                    <span id="fly-speed-value">5x</span>
+                </div>
+                
+                <div class="keybind-section">
+                    <span>Fly Controls:</span>
+                    <div class="keybind-info">
+                        <div class="key">Space</div>
+                        <span>Up</span>
+                    </div>
+                    <div class="keybind-info">
+                        <div class="key">Shift</div>
+                        <span>Down</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h2>Combat Mods</h2>
+                <div class="mod-option">
+                    <label for="aimbot-toggle">Aimbot</label>
+                    <label class="switch">
+                        <input type="checkbox" id="aimbot-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="mod-options-container" id="aimbot-options">
+                    <div class="mod-slider">
+                        <span>Smoothness:</span>
+                        <input type="range" min="1" max="10" value="5" id="aimbot-smoothness">
+                        <span id="aimbot-smoothness-value">5</span>
+                    </div>
+                    <div class="mod-radio">
+                        <span>Target:</span>
+                        <div class="radio-options">
+                            <label>
+                                <input type="radio" name="aimbot-target" value="head" checked>
+                                Head
+                            </label>
+                            <label>
+                                <input type="radio" name="aimbot-target" value="body">
+                                Body
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mod-checkbox">
+                        <label>
+                            <input type="checkbox" id="aimbot-visible-only">
+                            Target visible players only
+                        </label>
+                    </div>
+                    <div class="mod-checkbox">
+                        <label>
+                            <input type="checkbox" id="aimbot-lock-target">
+                            Lock on target
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="mod-option">
+                    <label for="teleport-toggle">Teleport</label>
+                    <label class="switch">
+                        <input type="checkbox" id="teleport-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="mod-options-container" id="teleport-options">
+                    <div class="mod-radio">
+                        <span>Teleport Type:</span>
+                        <div class="radio-options">
+                            <label>
+                                <input type="radio" name="teleport-type" value="player" checked>
+                                To Player
+                            </label>
+                            <label>
+                                <input type="radio" name="teleport-type" value="location">
+                                To Cursor
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mod-button">
+                        <button id="teleport-activate" class="action-button">Teleport Now [T]</button>
+                    </div>
+                    <div class="keybind-info">
+                        <div class="key">T</div>
+                        <span>Teleport</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h2>Visual Mods</h2>
+                <div class="mod-option">
+                    <label for="esp-toggle">ESP (Player Boxes)</label>
+                    <label class="switch">
+                        <input type="checkbox" id="esp-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="mod-options-container" id="esp-options">
+                    <div class="color-picker">
+                        <span>Box Color:</span>
+                        <div class="color-options">
+                            <div class="color-option selected" data-color="red" style="background-color: #ff5555;"></div>
+                            <div class="color-option" data-color="green" style="background-color: #55ff55;"></div>
+                            <div class="color-option" data-color="blue" style="background-color: #5555ff;"></div>
+                            <div class="color-option" data-color="yellow" style="background-color: #ffff55;"></div>
+                        </div>
+                    </div>
+                    <div class="mod-checkbox">
+                        <label>
+                            <input type="checkbox" id="esp-show-health" checked>
+                            Show player health
+                        </label>
+                    </div>
+                    <div class="mod-checkbox">
+                        <label>
+                            <input type="checkbox" id="esp-show-distance" checked>
+                            Show distance
+                        </label>
+                    </div>
+                    <div class="mod-checkbox">
+                        <label>
+                            <input type="checkbox" id="esp-show-name" checked>
+                            Show names
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="mod-option">
+                    <label for="wallhack-toggle">Wall Hack</label>
+                    <label class="switch">
+                        <input type="checkbox" id="wallhack-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="mod-options-container" id="wallhack-options">
+                    <div class="mod-slider">
+                        <span>Wall Transparency:</span>
+                        <input type="range" min="10" max="90" value="30" id="wall-transparency">
+                        <span id="wall-transparency-value">30%</span>
+                    </div>
+                    <div class="keybind-info">
+                        <div class="key">V</div>
+                        <span>Toggle Wallhack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-footer">
+            <div class="status-indicator active">
+                <span class="status-dot"></span>
+                <span class="status-text">Demo Mode</span>
+            </div>
+            <button id="save-settings">Save Settings</button>
+        </div>
+    </div>
+
+    <div class="game-simulation">
+        <div class="simulation-info">
+            <h2>Simulation View</h2>
+            <p>This shows a concept of how ESP and other mods would look</p>
+        </div>
+        <div class="game-view" id="game-view">
+            <div class="player player-self" id="player-self"></div>
+            <!-- Enemy players will be generated by JavaScript -->
+        </div>
+        <div class="simulation-controls">
+            <button id="move-left">← Move Left</button>
+            <button id="move-right">Move Right →</button>
+            <button id="jump-button">Jump</button>
+            <button id="fly-up">Fly Up</button>
+            <button id="fly-down">Fly Down</button>
+        </div>
+    </div>
+
+    <script src="disclaimer.js"></script>
+    <script src="modules/jumpModule.js"></script>
+    <script src="modules/flyModule.js"></script>
+    <script src="modules/aimbotModule.js"></script>
+    <script src="modules/espModule.js"></script>
+    <script src="modules/teleportModule.js"></script>
+    <script src="modules/wallhackModule.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

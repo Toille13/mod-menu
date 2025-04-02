@@ -1,0 +1,64 @@
+# Roblox Mod Menu - Installation Instructions
+
+## Overview
+This mod menu provides several features to enhance your Roblox gameplay:
+- Enhanced jumping
+- Flying capabilities
+- Aimbot with target locking
+- ESP player boxes
+- Wall hack/transparency
+- Player teleportation
+
+## Installation Steps
+
+1. **Download the Script**
+   - Save the `RobloxModMenu.lua` file to your computer
+
+2. **Use a Script Executor**
+   - Open your preferred Roblox script executor
+   - Load the `RobloxModMenu.lua` file
+   - Join a Roblox game
+   - Execute the script
+
+3. **Menu Controls**
+   - INSERT key: Toggle menu visibility
+   - Use the menu to enable/disable features and adjust settings
+
+## Keyboard Shortcuts
+
+### Movement Controls
+- F key: Toggle flight mode on/off
+- SPACE key: Fly up (when flight is enabled)
+- LEFT SHIFT key: Fly down (when flight is enabled)
+- W/A/S/D keys: Directional flying
+
+### Combat Controls
+- L key: Lock/unlock current target for aimbot
+- T key: Teleport to current target
+
+## Feature Details
+
+### Wall Hack
+- Makes walls and obstacles semi-transparent
+- Adjust transparency level with the slider (10% to 90%)
+- Allows you to see players through walls
+
+### ESP
+- Shows colored boxes around players
+- Displays player information (name, health, distance)
+- Customize the color from the menu
+
+### Aimbot
+- Automatically aims at the closest player
+- Can lock onto a specific target with the L key
+- Adjust smoothness for more natural looking aiming
+
+### Teleport
+- Instantly teleport to players
+- Works with locked targets or closest player
+- Toggle between player targeting or cursor location
+
+## Notes
+- This mod menu is designed for educational purposes
+- Use at your own risk as modifying games may violate Terms of Service
+- Some games may have anti-cheat systems that can detect script execution
